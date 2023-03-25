@@ -11,16 +11,18 @@ public class Primzahlrechner {
 
     public static void getPrimzahlen(int zahl){
 
-        int primZahlen = (zahl/2);
-        for (int i = 2; i < primZahlen;i++){
-            int primZahl = primZahlen % i;
-            if (primZahl == 0){
-            System.out.println("ja");
-            }
-            else {
-                System.out.println("nei");
-            }
+        boolean istPrimzahl = true;
+        for (int i = 2; i < zahl / 2;i++){
+            int resultat = zahl % i;
+            if (resultat == 0){
+               istPrimzahl = false;
+            }            
         }
+        if (istPrimzahl == true){
+            System.out.println("ja");
+        } 
+        else {System.out.println("nei");
+    }
 
     }
      
