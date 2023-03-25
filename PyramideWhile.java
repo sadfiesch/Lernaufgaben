@@ -13,17 +13,17 @@ public class PyramideWhile {
         System.out.println("With waht do you want bild:");
         String pyramidStone = scan.next();
         scan.close();
-       schleife (pyramidHight, pyramidStone);
+       pyramid (pyramidHight, pyramidStone);
     }
 
-    public static void schleife (int pyramidHight, String pyramidStone){
+    public static void pyramid (int pyramidHight, String pyramidStone){
 
-        int i = 0;
+        int counter = 0;
         String stone = "";
-        while (i < pyramidHight){
+        while (counter < pyramidHight){
             stone = stone + pyramidStone;
             System.out.println(stone);
-            i++;
+            counter++;
         }
     }
 }
