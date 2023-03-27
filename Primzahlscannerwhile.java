@@ -15,13 +15,13 @@ public class Primzahlscannerwhile {
 
         while (primZahl < zahl){
             boolean istPrimzahl = true;
-            int zahler = 2;
-            while (zahler < primZahl){
-                int resultat = primZahl % zahler;
+            int modulaRechner = 2;
+            while ( modulaRechner < primZahl){
+                int resultat = primZahl % modulaRechner;
                 if (resultat == 0){
                     istPrimzahl = false;
                 }
-                zahler++;
+                modulaRechner++;
             }
             if (istPrimzahl == true){
                 System.out.println(primZahl);
