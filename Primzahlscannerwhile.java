@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Primzahlscannerwhile {
     public static void main(String[]args){
         
+      
         Scanner sc = new Scanner(System.in);
         System.out.println("Wähle eine nummer.");
         int zahl = sc.nextInt();
@@ -10,7 +11,7 @@ public class Primzahlscannerwhile {
     }
 
     public static void getPrimzahlen(int zahl){
-
+      
         int primZahl = 1;
 
         while (primZahl < zahl){
@@ -28,7 +29,7 @@ public class Primzahlscannerwhile {
             }
             primZahl++;
         }
-
+    
     }
      
 }
