@@ -8,7 +8,7 @@ public class Kornaufnehmen {
             hamster = ("orn aufnehmen");
         }*/
         
-        //while (korna == true){
+        //while (kornDa == true){
             while (vormFrei() == true){
                 // }
                 /*  if (kornimMaul == true){
