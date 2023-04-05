@@ -10,9 +10,6 @@ int wegFinden = 0;
 			if (vornFrei()){ 
 				wegFinden++;
 			}
-		/*	if (vornFrei() == false) {
-			linksUm();
-			}*/
 		}
 		vor();
 		wegFinden = 0;
