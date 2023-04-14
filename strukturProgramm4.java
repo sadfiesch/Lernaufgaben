@@ -6,21 +6,18 @@ import de.hamster.debugger.model.Territorium;import de.hamster.debugger.model.Te
 			nimm();
 			zehler++;
 		}
-		if (zehler >= 6){
-			break;
-		}
 		else {
 			vor();
+		}
+		if (zehler >= 6){
+			break;
 		}
 	}
     linksUm();
     linksUm();
     while (vornFrei()){
-    	if (kornDa()){
-    		nimm();
-    	}
-    	else {
-    	vor();
+    	if (vornFrei()){
+    		vor();
     	}
     }
 }
