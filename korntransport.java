@@ -9,7 +9,7 @@ void korn(){
    	}
    	else{
    		if (!maulLeer()) {
-   			gib();
+   			erstesFreiesFeld();
    		}
    	}
    	if (kornDa() || !maulLeer()){
@@ -21,8 +21,23 @@ void laufZurWand(){
 	while (vornFrei()){
 		vor();
 	}
+	umDrehen();
+}
+void umDrehen(){
+
 	linksUm();
 	linksUm();
 	korn();
 }
-}
+void erstesFreiesFeld(){
+
+	while (!maulLeer()){
+		if (!kornDa()){
+			gib();
+		}
+		else {
+			vor();
+		}
+	}
+	laufZurWand();
+}}
