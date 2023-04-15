@@ -5,8 +5,8 @@ import de.hamster.debugger.model.Territorium;import de.hamster.debugger.model.Te
     	nimm();
     	seite++;
     }
-    while (!kornDa()){
-    	for (int i = 1;i < seite;i++){
+    for (int i = 0;i < 4;i++){
+    	for (int j = 1;j < seite;j++){
     		gib();
     		vor();    	
     	}
