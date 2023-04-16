@@ -25,9 +25,9 @@ import de.hamster.debugger.model.Territorium;import de.hamster.debugger.model.Te
     linksUm();
     linksUm();
     linksUm();
-    for (int i = 2;i >= 0;i--){
-    	for (int j = 0;j < strecke[i];j++){
-    	vor();
+    for (int i = strecke.length; i >= 0; i--){
+    	for (int j = 0; j < strecke[i]; j++){
+    	    vor();
     	}
     	linksUm();
     }
